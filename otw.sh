@@ -254,9 +254,9 @@ game_specific_command ()
         echo_color "$game$level"
         if [ "x$use_url" == "xtrue" ]; then
             if [ "x$use_gui" == "xtrue" ]; then
-                nohup xdg-open "http://$otw_baseurl/wargames/$game/$game$current_level.html" >/dev/null 2>&1 &
+                nohup xdg-open "http://$otw_baseurl/wargames/$game/$game$level.html" >/dev/null 2>&1 &
             else
-                echo_copy "http://$otw_baseurl/wargames/$game/$game$current_level.html"
+                echo_copy "http://$otw_baseurl/wargames/$game/$game$level.html"
             fi
         fi
 
@@ -298,15 +298,23 @@ game_specific_command ()
 
         case "$level" in
         0)
-            if [ "x$use_gui" == "xtrue" ]; then
+            if [ "x$use_gui" == "xtrue" -a "x$use_url" == "xtrue" ]; then
                 nohup xdg-open "http://$otw_baseurl/wargames/$game/$game$level.html" &
-            else
-                echo_copy "http://$otw_baseurl/wargames/$game/$game$level.html"
             fi
+            echo_color "This level is completed by going to"
+            echo_copy "http://$otw_baseurl/wargames/$game/$game$level.html"
 
             ret=0
             ;;
         *)
+            if [ "x$use_url" == "xtrue" ]; then
+                if [ "x$use_gui" == "xtrue" ]; then
+                    nohup xdg-open "http://$otw_baseurl/wargames/$game/$game$level.html" >/dev/null 2>&1 &
+                else
+                    echo_copy "http://$otw_baseurl/wargames/$game/$game$level.html"
+                fi
+            fi
+
             password="$(load_password "$game" "$level")"
             [ $? -eq 0 ] || return 1
 
