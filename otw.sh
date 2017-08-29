@@ -482,4 +482,7 @@ if [ "x$use_gui" == "xtrue" ]; then
     fi
 fi
 
+# Remove trailing slash
+game="${game%/}"
+
 main "$game" "$level"
