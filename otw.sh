@@ -212,7 +212,6 @@ game_ssh ()
     local port
     local re
 
-
     if [ "x$use_port" == "xtrue" ]; then
         port="$option_port"
     elif [ -f "$game/port" ]; then
