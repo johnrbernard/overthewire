@@ -212,9 +212,7 @@ game_ssh ()
     local port
     local re
 
-    # The reason why the user is allowed to override the port used is for
-    # forwards compatability, for instance if the port number of any level
-    # changes or if a new level is added.
+
     if [ "x$use_port" == "xtrue" ]; then
         port="$option_port"
     elif [ -f "$game/port" ]; then
@@ -397,6 +395,9 @@ while true; do
         use_git="true"
         shift
         ;;
+    # The reason why the user is allowed to override the port used is for
+    # forwards compatability, for instance if the port number of any level
+    # changes or if a new level is added.
     -p | --port)
         if [ $# -eq 1 ]; then
             echo_error "$program_name: must specify an argument to option '$1'" >&2
@@ -475,5 +476,3 @@ if [ "x$use_gui" == "xtrue" ]; then
 fi
 
 main "$game" "$level"
-
-# vim: et ts=4 sw=4
