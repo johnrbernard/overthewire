@@ -1,0 +1,5 @@
+A launcher for OverTheWire that stores passwords and builds ssh commands automatically.
+
+Dependencies: ssh, sshpass
+
+Optional Dependencies: git, xclip, xdg-open
