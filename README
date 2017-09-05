@@ -1,4 +1,10 @@
-A launcher for OverTheWire that stores passwords and builds ssh commands automatically.
+A launcher for OverTheWire that passwords and loads passwords and executes ssh commands automatically.
+
+Using this program, you will no longer have to:
+1. Copy and paste passwords from a file to an ssh command
+2. Type an ssh command
+(Howver, you will have to copy and paste passwords to log in to natas, and you
+may have to type ssh commands for certain anomolies such as bandit18.)
 
 Dependencies: ssh, sshpass
 
