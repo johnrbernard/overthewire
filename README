@@ -2,7 +2,7 @@ A launcher for OverTheWire that passwords and loads passwords and executes ssh c
 
 Using this program, you will no longer have to:
 1. Copy and paste passwords from a file to an ssh command
-2. Type an ssh command
+2. Type ssh commands
 (However, you will have to copy and paste passwords to log in to natas, and you
 may have to type ssh commands for certain anomolies such as bandit18.)
 
