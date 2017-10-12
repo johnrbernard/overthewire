@@ -280,7 +280,7 @@ game_specific_command ()
         ;;
     # Only ssh to the level, and there is no information at
     # overthewire.org/wargames/$game/$game$level.html
-    # (all of these are from intruded.net in August 2017)
+    # (all of these are from intruded.net since at least before October 2017)
     behemoth | leviathan | manpage | maze | narnia | utumno)
         echo_color "$game$level"
 
