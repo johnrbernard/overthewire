@@ -13,8 +13,8 @@ Dependencies: ssh, sshpass
 Optional Dependencies: git, xclip, xdg-open
 
 ### Demonstration
-A directory with the same name as the level you want to play must be created to
-log in to the level.
+A directory with the same name as the game you want to play must be created to
+log in to the game.
 
 ![otw1.png](https://raw.githubusercontent.com/johnrbernard/overthewire/master/demonstration/otw1.png)
 
