@@ -9,7 +9,7 @@ Using this program, you will no longer have to:
 (However, you will have to copy and paste passwords to log in to natas, and you
 may have to type ssh commands for certain anomolies such as bandit18.)
 
-Dependencies: ssh, sshpass
+Dependencies: ssh, sshpass  
 Optional Dependencies: git, xclip, xdg-open
 
 ### Demonstration
