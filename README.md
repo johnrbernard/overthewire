@@ -42,4 +42,10 @@ file corresponding to the level number.
 ![otw5.png](https://raw.githubusercontent.com/johnrbernard/overthewire/master/demonstration/otw5.png)
 
 
+You can replay any level for which you have saved a password by typing the
+level number following the game name.
+
+![otw6.png](https://raw.githubusercontent.com/johnrbernard/overthewire/master/demonstration/otw6.png)
+
+
 To learn more about otw.sh's capabilities, run the command with the option `--help` or `-h`.
