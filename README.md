@@ -40,3 +40,6 @@ Here you can see that otw.sh saved the password under the bandit folder in a
 file corresponding to the level number.
 
 ![otw5.png](https://raw.githubusercontent.com/johnrbernard/overthewire/master/demonstration/otw5.png)
+
+
+To learn more about otw.sh's capabilities, run the command with the option `--help` or `-h`.
