@@ -1,4 +1,7 @@
 ## overthewire
+
+[PROJECT HAS MOVED HERE](https://github.com/Flandre-X/otw)
+
 A launcher for OverTheWire that passwords and loads passwords and executes ssh
 commands automatically.
 
